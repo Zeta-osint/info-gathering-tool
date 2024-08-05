@@ -10,3 +10,8 @@ def detectOS(url):
     nmap.require_root(True)
     os_results = nmap.nmap_os_detection(url)
     return os_results
+
+def scanPortsService(url):
+    nmap = nmap3.Nmap()
+    os_results = nmap.nmap_version_detection(url)
+    return os_results
